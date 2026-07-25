@@ -4,6 +4,8 @@
 
 ### 1️⃣ Resumo da Arquitetura do Modelo
 
+Projeto escolhido: **Classificação MNIST**
+
 Foi implementada uma Rede Neural Convolucional (CNN) para classificação de dígitos manuscritos do conjunto de dados MNIST.
 
 A arquitetura é composta por três blocos convolucionais, sendo que cada bloco utiliza uma camada `Conv2D`, seguida por `BatchNormalization` e `MaxPooling2D`. Após a extração das características, os mapas gerados são convertidos em um vetor utilizando `Flatten`. Em seguida, é aplicada uma camada `Dropout` com taxa de 0,5 para reduzir o risco de overfitting antes da camada de saída.
@@ -16,9 +18,10 @@ Para o treinamento foi utilizado `validation_split=0.1` para separar o conjunto 
 
 Principais bibliotecas utilizadas:
 
-- TensorFlow / Keras
-- NumPy
-- os
+- TensorFlow == 2.21.0
+- Keras == 3.12.3
+- NumPy == 2.2.6
+- os (módulo padrão da biblioteca do Python)
 
 ### 3️⃣ Técnica de Otimização do Modelo
 
@@ -34,8 +37,8 @@ Essa técnica reduz o tamanho do modelo por meio da quantização automática do
 
 ### 4️⃣ Resultados Obtidos
 
-- **Acurácia final de validação:** 98,93%
-- **Acurácia final no conjunto de teste:** 99,11%
+- **Acurácia final de validação:** 99,00%
+- **Acurácia final no conjunto de teste:** 98,89%
 - **Tamanho do arquivo `model.h5`:** 1,3 MB
 - **Tamanho do arquivo `model.tflite`:** 114 KB
 
