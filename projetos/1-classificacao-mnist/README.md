@@ -8,7 +8,7 @@ Projeto escolhido: **Classificação MNIST**
 
 Foi implementada uma Rede Neural Convolucional (CNN) para classificação de dígitos manuscritos do conjunto de dados MNIST.
 
-A arquitetura é composta por três blocos convolucionais, sendo que cada bloco utiliza uma camada `Conv2D`, seguida por `BatchNormalization` e `MaxPooling2D`. Após a extração das características, os mapas gerados são convertidos em um vetor utilizando `Flatten`. Em seguida, é aplicada uma camada `Dropout` com taxa de 0,5 para reduzir o risco de overfitting antes da camada de saída.
+A arquitetura é composta por três blocos convolucionais, sendo que cada bloco utiliza uma camada `Conv2D`, seguida por `BatchNormalization` e `MaxPooling2D`. Após a extração das características, os mapas gerados são convertidos em um vetor utilizando `Flatten`. Em seguida, é aplicada uma camada `Dropout` com taxa de 0,5 para reduzir o risco de overfitting antes da camada de saída — esse valor foi escolhido por ser amplamente utilizado em CNNs de porte pequeno, equilibrando regularização e preservação da capacidade de aprendizado sem descartar informação em excesso durante o treinamento.
 
 A camada final possui 10 neurônios com ativação `softmax`, responsáveis pela classificação dos dígitos de 0 a 9.
 
@@ -18,9 +18,9 @@ Para o treinamento foi utilizado `validation_split=0.1` para separar o conjunto 
 
 Principais bibliotecas utilizadas:
 
-- TensorFlow == 2.21.0
-- Keras == 3.12.3
-- NumPy == 2.2.6
+- TensorFlow (versão 2.21.0)
+- Keras (versão 3.12.3)
+- NumPy (versão 2.2.6)
 - os (módulo padrão da biblioteca do Python)
 
 ### 3️⃣ Técnica de Otimização do Modelo

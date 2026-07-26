@@ -3,18 +3,8 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 
-# ---------------------------------------------------------------------------
-# Projeto 1 — Classificação MNIST
-#
-# Requisitos:
-#   1. Carregar o dataset MNIST via tf.keras.datasets.mnist
-#   2. Normalizar imagens para [0,1]
-#   3. Separar conjunto de validação
-#   4. Construir CNN com Conv2D + BatchNormalization + MaxPooling2D
-#   5. Aplicar Dropout antes da saída
-#   6. Utilizar EarlyStopping
-#   7. Salvar modelo como model.h5
-# ---------------------------------------------------------------------------
+# Treinamento de uma CNN para classificação de dígitos do MNIST,
+# com split de validação, EarlyStopping e salvamento em model.h5.
 
 
 # Carregar dataset MNIST

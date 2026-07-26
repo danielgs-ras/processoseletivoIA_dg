@@ -1,18 +1,9 @@
 import tensorflow as tf
 import os
 
-# ---------------------------------------------------------------------------
-# Projeto 1 — Otimização do Modelo (MNIST)
-#
-# Requisitos (veja README.md desta pasta para detalhes completos):
-#   1. Carregar o modelo treinado em "model.h5"
-#   2. Converter para TensorFlow Lite usando tf.lite.TFLiteConverter
-#   3. Aplicar uma técnica de otimização (ex: Dynamic Range Quantization,
-#      via converter.optimizations = [tf.lite.Optimize.DEFAULT])
-#   4. Salvar o resultado como "model.tflite"
-# ---------------------------------------------------------------------------
+# Conversão do modelo treinado (model.h5) para TensorFlow Lite,
+# aplicando Dynamic Range Quantization para reduzir o tamanho do arquivo.
 
-# insira seu código aqui
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
